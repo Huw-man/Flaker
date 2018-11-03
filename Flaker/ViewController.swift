@@ -12,23 +12,42 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var newCodeLabel: UITextField!
+    @IBOutlet weak var newCodeLabel: UILabel!
     @IBOutlet weak var joinCodeLabel: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // handle the code fields input through delegate callbacks
-        newCodeLabel.delegate = self
+        joinCodeLabel.delegate = self
     }
+    
+    //MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //hides the keyboard
+        textField.resignFirstResponder()
+        return true
+        }
+   // func textFieldDidEndEditing(_ textField: UITextField) {
+      //  nameLabel.text = textField.text
+    // }
     
     //MARK: Actions
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+        mealNameLabel.text = "Default Text"
+    
     @IBAction func createParty(_ sender: UIButton) {
+       
+    let number = Int.random(in: 100000 ..< 999999)
+            print(number)
+    
     }
     
-    @IBAction func joinParty(_ sender: Any) {
+    @IBAction func joinParty(_ sender: UIButton)   {
     }
     
-
+    @IBAction func startButton(_ sender: UIButton) {
+    }
+    
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8739832218E4C1E00D01F54 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8739831218E4C1E00D01F54 /* Location.swift */; };
 		A8E88204218D8BC7006B55D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88203218D8BC7006B55D5 /* AppDelegate.swift */; };
 		A8E88206218D8BC7006B55D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88205218D8BC7006B55D5 /* ViewController.swift */; };
 		A8E88209218D8BC7006B55D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E88207218D8BC7006B55D5 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8739831218E4C1E00D01F54 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A8739833218E52F400D01F54 /* appleCampus.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appleCampus.gpx; sourceTree = "<group>"; };
 		A8E88200218D8BC7006B55D5 /* Flaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E88203218D8BC7006B55D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8E88205218D8BC7006B55D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		A8E881F7218D8BC7006B55D5 = {
 			isa = PBXGroup;
 			children = (
+				A8739833218E52F400D01F54 /* appleCampus.gpx */,
 				A8E88202218D8BC7006B55D5 /* Flaker */,
 				A8E88217218D8BC9006B55D5 /* FlakerTests */,
 				A8E88222218D8BC9006B55D5 /* FlakerUITests */,
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A8E88203218D8BC7006B55D5 /* AppDelegate.swift */,
+				A8739831218E4C1E00D01F54 /* Location.swift */,
 				A8E88205218D8BC7006B55D5 /* ViewController.swift */,
 				A8E88207218D8BC7006B55D5 /* Main.storyboard */,
 				A8E8820A218D8BC9006B55D5 /* Assets.xcassets */,
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E88206218D8BC7006B55D5 /* ViewController.swift in Sources */,
+				A8739832218E4C1E00D01F54 /* Location.swift in Sources */,
 				A8E88204218D8BC7006B55D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +353,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M2PD6768P8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -363,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,6 +415,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M2PD6768P8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -418,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

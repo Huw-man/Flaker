@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         // handle the code fields input through delegate callbacks
-        joinCodeLabel.delegate = self
+        //joinCodeLabel.delegate = self
     }
     
     //MARK: UITextFieldDelegate
@@ -34,12 +34,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Default Text"
+        //newCodeLabel.text = "Unique Code"
+    }
     
     @IBAction func createParty(_ sender: UIButton) {
        
-    let number = Int.random(in: 100000 ..< 999999)
-            print(number)
+       // let number = Int.random(in: 100000 ..< 999999)
+       // print(number)
+      //  newCodeLabel.text = String(number)
     
     }
     

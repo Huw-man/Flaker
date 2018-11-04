@@ -66,16 +66,17 @@ class HttpClient {
     }
 
     func makePostCall(_ code: Int, lat: Double, lon: Double) {
-        let todosEndpoint: String = "https://rendezvous-api.herokuapp.com/"
+        let todosEndpoint: String = "https://rendezvous-api.herokuapp.com/create_user"
         guard let todosURL = URL(string: todosEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         var todosUrlRequest = URLRequest(url: todosURL)
         todosUrlRequest.httpMethod = "POST"
-        let newTodo = "create_user?code=" + String(code) + "&lat=" + String(lat) + "&lon=" + String(lon)
+        /*let newTodo = "code=" + String(code) + "&lat=" + String(lat) + "&lon=" + String(lon)
         todosUrlRequest.httpBody = newTodo.data(using: String.Encoding.utf8)
-/*
+ */
+
         let newTodo: [String: Any] = ["code": code, "lat": lat, "lon": lon]
         let jsonTodo: Data
         do {
@@ -85,7 +86,7 @@ class HttpClient {
             print("Error: cannot create JSON from todo")
             return
         }
- */
+ 
         print(newTodo)
         print(todosUrlRequest)
         let session = URLSession.shared

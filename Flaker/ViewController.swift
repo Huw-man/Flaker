@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var joinCodeLabel: UITextField!
 
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // handle the code fields input through delegate callbacks
@@ -47,6 +49,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func createParty(_ sender: UIButton) {
+
         let number = Int.random(in: 100000 ..< 999999)
         newCodeLabel.text = String(number)
         HttpClient().makePostCall(number, lat: AppDelegate.lat, lon: AppDelegate.lon)

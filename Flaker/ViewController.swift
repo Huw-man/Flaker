@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: Actions
     @IBAction func createParty(_ sender: UIButton) {
+        let code = Int.random(in: 100000..<1000000)
+        
     }
     
     @IBAction func joinParty(_ sender: Any) {

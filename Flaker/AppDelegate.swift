@@ -27,12 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in
         }
         locationManager.requestAlwaysAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+        locationManager.requestWhenInUseAuthorization()
         
-        // Set a movement threshold for new events.
-        locationManager.distanceFilter = 15; // meters
-        locationManager.startMonitoringVisits()
-        locationManager.delegate = self
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+            locationManager.startUpdatingLocation()
+        }
+        
         return true
     }
 
@@ -61,17 +63,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
         // create CLLocation from the coordinates of CLVisit
-        let clLocation = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)
+//        let clLocation = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)
         
         // Get location description
-        AppDelegate.geoCoder.reverseGeocodeLocation(clLocation) { placemarks, _ in
-            if let place = placemarks?.first {
-                let description = "\(place)"
-                self.newVisitReceived(visit, description: description)
-            }
-        }
+//        AppDelegate.geoCoder.reverseGeocodeLocation(clLocation) { placemarks, _ in
+//            if let place = placemarks?.first {
+//                let description = "\(place)"
+//                self.newVisitReceived(visit, description: description)
+//            }
+//        }
     }
     
     func newVisitReceived(_ visit: CLVisit, description: String) {

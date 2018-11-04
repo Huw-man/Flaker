@@ -25,7 +25,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Location used for updating user location to party</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location used for updating location in app</string>
+	<string>Location used for updating user location</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var newCodeLabel: UILabel!
     @IBOutlet weak var joinCodeLabel: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="45252637_344926639600620_6061871280561324032_n.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCo-Ja-lGd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCo-Ja-lGd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-PP-iiP">
@@ -136,6 +136,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="45252637_344926639600620_6061871280561324032_n.png" width="970" height="1264"/>
+        <image name="pic.png" width="970" height="1264"/>
     </resources>
 </document>

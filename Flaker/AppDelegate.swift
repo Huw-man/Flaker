@@ -64,8 +64,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+    }
+}
         
 //        print("locations = \(locValue.latitude) \(locValue.longitude)")
         
@@ -79,25 +81,25 @@ extension AppDelegate: CLLocationManagerDelegate {
 //                self.newVisitReceived(visit, description: description)
 //            }
 //        }
-    }
+//    }
     
-    func newVisitReceived(_ visit: CLVisit, description: String) {
-        let location = Location(visit: visit, descriptionString: description)
-        // 1
-        let content = UNMutableNotificationContent()
-        content.title = "New Journal entry 📌"
-        content.body = location.description
-        content.sound = .default
-        
-        // 2
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        let request = UNNotificationRequest(identifier: location.dateString, content: content, trigger: trigger)
-        
-        // 3
-        center.add(request, withCompletionHandler: nil)
-        // Save location to disk
-    }
+//    func newVisitReceived(_ visit: CLVisit, description: String) {
+//        let location = Location(visit: visit, descriptionString: description)
+//        // 1
+//        let content = UNMutableNotificationContent()
+//        content.title = "New Journal entry 📌"
+//        content.body = location.description
+//        content.sound = .default
+//
+//        // 2
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+//        let request = UNNotificationRequest(identifier: location.dateString, content: content, trigger: trigger)
+//
+//        // 3
+//        center.add(request, withCompletionHandler: nil)
+//        // Save location to disk
+//    }
     
     
-}
+//}
 

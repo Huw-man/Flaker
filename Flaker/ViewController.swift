@@ -57,12 +57,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    @IBAction func start(_ sender: UIButton) {
-        print("start")
-        
-    }
-    @IBAction func start2(_ sender: Any) {
-        print("start2")
+    
+    @IBAction func start(_ sender: Any) {
     
     //    @IBAction func startButton(_ sender: UIButton) {
         // begin navigation to destination

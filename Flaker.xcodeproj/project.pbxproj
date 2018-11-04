@@ -1,599 +1,601 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 50;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
 
 /* Begin PBXBuildFile section */
+		A8203CE2218EC203002A4F8C /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = A8203CE1218EC202002A4F8C /* pic.png */; };
 		A871AC02218E93BE00BBFE1F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A871AC01218E93BE00BBFE1F /* HttpClient.swift */; };
-        A8739832218E4C1E00D01F54 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8739831218E4C1E00D01F54 /* Location.swift */; };
-        A8E88204218D8BC7006B55D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88203218D8BC7006B55D5 /* AppDelegate.swift */; };
-        A8E88206218D8BC7006B55D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88205218D8BC7006B55D5 /* ViewController.swift */; };
-        A8E88209218D8BC7006B55D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E88207218D8BC7006B55D5 /* Main.storyboard */; };
-        A8E8820B218D8BC9006B55D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E8820A218D8BC9006B55D5 /* Assets.xcassets */; };
-        A8E8820E218D8BC9006B55D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8820C218D8BC9006B55D5 /* LaunchScreen.storyboard */; };
-        A8E88219218D8BC9006B55D5 /* FlakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88218218D8BC9006B55D5 /* FlakerTests.swift */; };
-        A8E88224218D8BC9006B55D5 /* FlakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88223218D8BC9006B55D5 /* FlakerUITests.swift */; };
+		A8739832218E4C1E00D01F54 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8739831218E4C1E00D01F54 /* Location.swift */; };
+		A8E88204218D8BC7006B55D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88203218D8BC7006B55D5 /* AppDelegate.swift */; };
+		A8E88206218D8BC7006B55D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88205218D8BC7006B55D5 /* ViewController.swift */; };
+		A8E88209218D8BC7006B55D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E88207218D8BC7006B55D5 /* Main.storyboard */; };
+		A8E8820B218D8BC9006B55D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E8820A218D8BC9006B55D5 /* Assets.xcassets */; };
+		A8E8820E218D8BC9006B55D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E8820C218D8BC9006B55D5 /* LaunchScreen.storyboard */; };
+		A8E88219218D8BC9006B55D5 /* FlakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88218218D8BC9006B55D5 /* FlakerTests.swift */; };
+		A8E88224218D8BC9006B55D5 /* FlakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E88223218D8BC9006B55D5 /* FlakerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-        A8E88215218D8BC9006B55D5 /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = A8E881F8218D8BC7006B55D5 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = A8E881FF218D8BC7006B55D5;
-            remoteInfo = Flaker;
-        };
-        A8E88220218D8BC9006B55D5 /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = A8E881F8218D8BC7006B55D5 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = A8E881FF218D8BC7006B55D5;
-            remoteInfo = Flaker;
-        };
+		A8E88215218D8BC9006B55D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E881F8218D8BC7006B55D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E881FF218D8BC7006B55D5;
+			remoteInfo = Flaker;
+		};
+		A8E88220218D8BC9006B55D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E881F8218D8BC7006B55D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E881FF218D8BC7006B55D5;
+			remoteInfo = Flaker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-        A871AC01218E93BE00BBFE1F /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
-        A8739831218E4C1E00D01F54 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-        A8739833218E52F400D01F54 /* appleCampus.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appleCampus.gpx; sourceTree = "<group>"; };
-        A8E88200218D8BC7006B55D5 /* Flaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-        A8E88203218D8BC7006B55D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        A8E88205218D8BC7006B55D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-        A8E88208218D8BC7006B55D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        A8E8820A218D8BC9006B55D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        A8E8820D218D8BC9006B55D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        A8E8820F218D8BC9006B55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        A8E88214218D8BC9006B55D5 /* FlakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        A8E88218218D8BC9006B55D5 /* FlakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlakerTests.swift; sourceTree = "<group>"; };
-        A8E8821A218D8BC9006B55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        A8E8821F218D8BC9006B55D5 /* FlakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        A8E88223218D8BC9006B55D5 /* FlakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlakerUITests.swift; sourceTree = "<group>"; };
-        A8E88225218D8BC9006B55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8203CE1218EC202002A4F8C /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+		A871AC01218E93BE00BBFE1F /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		A8739831218E4C1E00D01F54 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A8739833218E52F400D01F54 /* appleCampus.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appleCampus.gpx; sourceTree = "<group>"; };
+		A8E88200218D8BC7006B55D5 /* Flaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E88203218D8BC7006B55D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8E88205218D8BC7006B55D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8E88208218D8BC7006B55D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8E8820A218D8BC9006B55D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E8820D218D8BC9006B55D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8E8820F218D8BC9006B55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E88214218D8BC9006B55D5 /* FlakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E88218218D8BC9006B55D5 /* FlakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlakerTests.swift; sourceTree = "<group>"; };
+		A8E8821A218D8BC9006B55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E8821F218D8BC9006B55D5 /* FlakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E88223218D8BC9006B55D5 /* FlakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlakerUITests.swift; sourceTree = "<group>"; };
+		A8E88225218D8BC9006B55D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        A8E881FD218D8BC7006B55D5 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A8E88211218D8BC9006B55D5 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A8E8821C218D8BC9006B55D5 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		A8E881FD218D8BC7006B55D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E88211218D8BC9006B55D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E8821C218D8BC9006B55D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        A8E881F7218D8BC7006B55D5 = {
-            isa = PBXGroup;
-            children = (
-                A8739833218E52F400D01F54 /* appleCampus.gpx */,
-                A8E88202218D8BC7006B55D5 /* Flaker */,
-                A8E88217218D8BC9006B55D5 /* FlakerTests */,
-                A8E88222218D8BC9006B55D5 /* FlakerUITests */,
-                A8E88201218D8BC7006B55D5 /* Products */,
-            );
-            sourceTree = "<group>";
-        };
-        A8E88201218D8BC7006B55D5 /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                A8E88200218D8BC7006B55D5 /* Flaker.app */,
-                A8E88214218D8BC9006B55D5 /* FlakerTests.xctest */,
-                A8E8821F218D8BC9006B55D5 /* FlakerUITests.xctest */,
-            );
-            name = Products;
-            sourceTree = "<group>";
-        };
-        A8E88202218D8BC7006B55D5 /* Flaker */ = {
-            isa = PBXGroup;
-            children = (
-                03684B79218EA93900DD222D /* pic.png */,
-                A8E88203218D8BC7006B55D5 /* AppDelegate.swift */,
-                A871AC01218E93BE00BBFE1F /* HttpClient.swift */,
-                A8739831218E4C1E00D01F54 /* Location.swift */,
-                A8E88205218D8BC7006B55D5 /* ViewController.swift */,
-                A8E88207218D8BC7006B55D5 /* Main.storyboard */,
-                A8E8820A218D8BC9006B55D5 /* Assets.xcassets */,
-                A8E8820C218D8BC9006B55D5 /* LaunchScreen.storyboard */,
-                A8E8820F218D8BC9006B55D5 /* Info.plist */,
-            );
-            path = Flaker;
-            sourceTree = "<group>";
-        };
-        A8E88217218D8BC9006B55D5 /* FlakerTests */ = {
-            isa = PBXGroup;
-            children = (
-                A8E88218218D8BC9006B55D5 /* FlakerTests.swift */,
-                A8E8821A218D8BC9006B55D5 /* Info.plist */,
-            );
-            path = FlakerTests;
-            sourceTree = "<group>";
-        };
-        A8E88222218D8BC9006B55D5 /* FlakerUITests */ = {
-            isa = PBXGroup;
-            children = (
-                A8E88223218D8BC9006B55D5 /* FlakerUITests.swift */,
-                A8E88225218D8BC9006B55D5 /* Info.plist */,
-            );
-            path = FlakerUITests;
-            sourceTree = "<group>";
-        };
+		A8E881F7218D8BC7006B55D5 = {
+			isa = PBXGroup;
+			children = (
+				A8739833218E52F400D01F54 /* appleCampus.gpx */,
+				A8E88202218D8BC7006B55D5 /* Flaker */,
+				A8E88217218D8BC9006B55D5 /* FlakerTests */,
+				A8E88222218D8BC9006B55D5 /* FlakerUITests */,
+				A8E88201218D8BC7006B55D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8E88201218D8BC7006B55D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E88200218D8BC7006B55D5 /* Flaker.app */,
+				A8E88214218D8BC9006B55D5 /* FlakerTests.xctest */,
+				A8E8821F218D8BC9006B55D5 /* FlakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E88202218D8BC7006B55D5 /* Flaker */ = {
+			isa = PBXGroup;
+			children = (
+				A8203CE1218EC202002A4F8C /* pic.png */,
+				A8E88203218D8BC7006B55D5 /* AppDelegate.swift */,
+				A871AC01218E93BE00BBFE1F /* HttpClient.swift */,
+				A8739831218E4C1E00D01F54 /* Location.swift */,
+				A8E88205218D8BC7006B55D5 /* ViewController.swift */,
+				A8E88207218D8BC7006B55D5 /* Main.storyboard */,
+				A8E8820A218D8BC9006B55D5 /* Assets.xcassets */,
+				A8E8820C218D8BC9006B55D5 /* LaunchScreen.storyboard */,
+				A8E8820F218D8BC9006B55D5 /* Info.plist */,
+			);
+			path = Flaker;
+			sourceTree = "<group>";
+		};
+		A8E88217218D8BC9006B55D5 /* FlakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8E88218218D8BC9006B55D5 /* FlakerTests.swift */,
+				A8E8821A218D8BC9006B55D5 /* Info.plist */,
+			);
+			path = FlakerTests;
+			sourceTree = "<group>";
+		};
+		A8E88222218D8BC9006B55D5 /* FlakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8E88223218D8BC9006B55D5 /* FlakerUITests.swift */,
+				A8E88225218D8BC9006B55D5 /* Info.plist */,
+			);
+			path = FlakerUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        A8E881FF218D8BC7006B55D5 /* Flaker */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = A8E88228218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "Flaker" */;
-            buildPhases = (
-                A8E881FC218D8BC7006B55D5 /* Sources */,
-                A8E881FD218D8BC7006B55D5 /* Frameworks */,
-                A8E881FE218D8BC7006B55D5 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = Flaker;
-            productName = Flaker;
-            productReference = A8E88200218D8BC7006B55D5 /* Flaker.app */;
-            productType = "com.apple.product-type.application";
-        };
-        A8E88213218D8BC9006B55D5 /* FlakerTests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = A8E8822B218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerTests" */;
-            buildPhases = (
-                A8E88210218D8BC9006B55D5 /* Sources */,
-                A8E88211218D8BC9006B55D5 /* Frameworks */,
-                A8E88212218D8BC9006B55D5 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                A8E88216218D8BC9006B55D5 /* PBXTargetDependency */,
-            );
-            name = FlakerTests;
-            productName = FlakerTests;
-            productReference = A8E88214218D8BC9006B55D5 /* FlakerTests.xctest */;
-            productType = "com.apple.product-type.bundle.unit-test";
-        };
-        A8E8821E218D8BC9006B55D5 /* FlakerUITests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = A8E8822E218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerUITests" */;
-            buildPhases = (
-                A8E8821B218D8BC9006B55D5 /* Sources */,
-                A8E8821C218D8BC9006B55D5 /* Frameworks */,
-                A8E8821D218D8BC9006B55D5 /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                A8E88221218D8BC9006B55D5 /* PBXTargetDependency */,
-            );
-            name = FlakerUITests;
-            productName = FlakerUITests;
-            productReference = A8E8821F218D8BC9006B55D5 /* FlakerUITests.xctest */;
-            productType = "com.apple.product-type.bundle.ui-testing";
-        };
+		A8E881FF218D8BC7006B55D5 /* Flaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E88228218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "Flaker" */;
+			buildPhases = (
+				A8E881FC218D8BC7006B55D5 /* Sources */,
+				A8E881FD218D8BC7006B55D5 /* Frameworks */,
+				A8E881FE218D8BC7006B55D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flaker;
+			productName = Flaker;
+			productReference = A8E88200218D8BC7006B55D5 /* Flaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8E88213218D8BC9006B55D5 /* FlakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E8822B218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerTests" */;
+			buildPhases = (
+				A8E88210218D8BC9006B55D5 /* Sources */,
+				A8E88211218D8BC9006B55D5 /* Frameworks */,
+				A8E88212218D8BC9006B55D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8E88216218D8BC9006B55D5 /* PBXTargetDependency */,
+			);
+			name = FlakerTests;
+			productName = FlakerTests;
+			productReference = A8E88214218D8BC9006B55D5 /* FlakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8E8821E218D8BC9006B55D5 /* FlakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E8822E218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerUITests" */;
+			buildPhases = (
+				A8E8821B218D8BC9006B55D5 /* Sources */,
+				A8E8821C218D8BC9006B55D5 /* Frameworks */,
+				A8E8821D218D8BC9006B55D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8E88221218D8BC9006B55D5 /* PBXTargetDependency */,
+			);
+			name = FlakerUITests;
+			productName = FlakerUITests;
+			productReference = A8E8821F218D8BC9006B55D5 /* FlakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        A8E881F8218D8BC7006B55D5 /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastSwiftUpdateCheck = 1010;
-                LastUpgradeCheck = 1010;
-                ORGANIZATIONNAME = "Newman Hu";
-                TargetAttributes = {
-                    A8E881FF218D8BC7006B55D5 = {
-                        CreatedOnToolsVersion = 10.1;
-                    };
-                    A8E88213218D8BC9006B55D5 = {
-                        CreatedOnToolsVersion = 10.1;
-                        TestTargetID = A8E881FF218D8BC7006B55D5;
-                    };
-                    A8E8821E218D8BC9006B55D5 = {
-                        CreatedOnToolsVersion = 10.1;
-                        TestTargetID = A8E881FF218D8BC7006B55D5;
-                    };
-                };
-            };
-            buildConfigurationList = A8E881FB218D8BC7006B55D5 /* Build configuration list for PBXProject "Flaker" */;
-            compatibilityVersion = "Xcode 9.3";
-            developmentRegion = en;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-                Base,
-            );
-            mainGroup = A8E881F7218D8BC7006B55D5;
-            productRefGroup = A8E88201218D8BC7006B55D5 /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                A8E881FF218D8BC7006B55D5 /* Flaker */,
-                A8E88213218D8BC9006B55D5 /* FlakerTests */,
-                A8E8821E218D8BC9006B55D5 /* FlakerUITests */,
-            );
-        };
+		A8E881F8218D8BC7006B55D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Newman Hu";
+				TargetAttributes = {
+					A8E881FF218D8BC7006B55D5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A8E88213218D8BC9006B55D5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A8E881FF218D8BC7006B55D5;
+					};
+					A8E8821E218D8BC9006B55D5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A8E881FF218D8BC7006B55D5;
+					};
+				};
+			};
+			buildConfigurationList = A8E881FB218D8BC7006B55D5 /* Build configuration list for PBXProject "Flaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8E881F7218D8BC7006B55D5;
+			productRefGroup = A8E88201218D8BC7006B55D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8E881FF218D8BC7006B55D5 /* Flaker */,
+				A8E88213218D8BC9006B55D5 /* FlakerTests */,
+				A8E8821E218D8BC9006B55D5 /* FlakerUITests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-        A8E881FE218D8BC7006B55D5 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A8E8820E218D8BC9006B55D5 /* LaunchScreen.storyboard in Resources */,
-                A8E8820B218D8BC9006B55D5 /* Assets.xcassets in Resources */,
-                A8E88209218D8BC7006B55D5 /* Main.storyboard in Resources */,
-                03684B7A218EA93900DD222D /* pic.png in Resources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A8E88212218D8BC9006B55D5 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A8E8821D218D8BC9006B55D5 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		A8E881FE218D8BC7006B55D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E8820E218D8BC9006B55D5 /* LaunchScreen.storyboard in Resources */,
+				A8E8820B218D8BC9006B55D5 /* Assets.xcassets in Resources */,
+				A8203CE2218EC203002A4F8C /* pic.png in Resources */,
+				A8E88209218D8BC7006B55D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E88212218D8BC9006B55D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E8821D218D8BC9006B55D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-        A8E881FC218D8BC7006B55D5 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A8E88206218D8BC7006B55D5 /* ViewController.swift in Sources */,
-                A8739832218E4C1E00D01F54 /* Location.swift in Sources */,
-                A871AC02218E93BE00BBFE1F /* HttpClient.swift in Sources */,
-                A8E88204218D8BC7006B55D5 /* AppDelegate.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A8E88210218D8BC9006B55D5 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A8E88219218D8BC9006B55D5 /* FlakerTests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        A8E8821B218D8BC9006B55D5 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                A8E88224218D8BC9006B55D5 /* FlakerUITests.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		A8E881FC218D8BC7006B55D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E88206218D8BC7006B55D5 /* ViewController.swift in Sources */,
+				A8739832218E4C1E00D01F54 /* Location.swift in Sources */,
+				A871AC02218E93BE00BBFE1F /* HttpClient.swift in Sources */,
+				A8E88204218D8BC7006B55D5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E88210218D8BC9006B55D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E88219218D8BC9006B55D5 /* FlakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E8821B218D8BC9006B55D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E88224218D8BC9006B55D5 /* FlakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-        A8E88216218D8BC9006B55D5 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = A8E881FF218D8BC7006B55D5 /* Flaker */;
-            targetProxy = A8E88215218D8BC9006B55D5 /* PBXContainerItemProxy */;
-        };
-        A8E88221218D8BC9006B55D5 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = A8E881FF218D8BC7006B55D5 /* Flaker */;
-            targetProxy = A8E88220218D8BC9006B55D5 /* PBXContainerItemProxy */;
-        };
+		A8E88216218D8BC9006B55D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E881FF218D8BC7006B55D5 /* Flaker */;
+			targetProxy = A8E88215218D8BC9006B55D5 /* PBXContainerItemProxy */;
+		};
+		A8E88221218D8BC9006B55D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E881FF218D8BC7006B55D5 /* Flaker */;
+			targetProxy = A8E88220218D8BC9006B55D5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-        A8E88207218D8BC7006B55D5 /* Main.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                A8E88208218D8BC7006B55D5 /* Base */,
-            );
-            name = Main.storyboard;
-            sourceTree = "<group>";
-        };
-        A8E8820C218D8BC9006B55D5 /* LaunchScreen.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                A8E8820D218D8BC9006B55D5 /* Base */,
-            );
-            name = LaunchScreen.storyboard;
-            sourceTree = "<group>";
-        };
+		A8E88207218D8BC7006B55D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E88208218D8BC7006B55D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8E8820C218D8BC9006B55D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E8820D218D8BC9006B55D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-        A8E88226218D8BC9006B55D5 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                DEVELOPMENT_TEAM = M2PD6768P8;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                ENABLE_TESTABILITY = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_DYNAMIC_NO_PIC = NO;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-                MTL_FAST_MATH = YES;
-                ONLY_ACTIVE_ARCH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            };
-            name = Debug;
-        };
-        A8E88227218D8BC9006B55D5 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                DEVELOPMENT_TEAM = M2PD6768P8;
-                ENABLE_NS_ASSERTIONS = NO;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-                MTL_ENABLE_DEBUG_INFO = NO;
-                MTL_FAST_MATH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_COMPILATION_MODE = wholemodule;
-                SWIFT_OPTIMIZATION_LEVEL = "-O";
-                VALIDATE_PRODUCT = YES;
-            };
-            name = Release;
-        };
-        A8E88229218D8BC9006B55D5 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = Flaker/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.Flaker;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = 1;
-            };
-            name = Debug;
-        };
-        A8E8822A218D8BC9006B55D5 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = Flaker/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.Flaker;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = 1;
-            };
-            name = Release;
-        };
-        A8E8822C218D8BC9006B55D5 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = FlakerTests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerTests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaker.app/Flaker";
-            };
-            name = Debug;
-        };
-        A8E8822D218D8BC9006B55D5 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                BUNDLE_LOADER = "$(TEST_HOST)";
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = FlakerTests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerTests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaker.app/Flaker";
-            };
-            name = Release;
-        };
-        A8E8822F218D8BC9006B55D5 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = FlakerUITests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerUITests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = Flaker;
-            };
-            name = Debug;
-        };
-        A8E88230218D8BC9006B55D5 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = FlakerUITests/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                    "@loader_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerUITests;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.2;
-                TARGETED_DEVICE_FAMILY = "1,2";
-                TEST_TARGET_NAME = Flaker;
-            };
-            name = Release;
-        };
+		A8E88226218D8BC9006B55D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M2PD6768P8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8E88227218D8BC9006B55D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M2PD6768P8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8E88229218D8BC9006B55D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Flaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.Flaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A8E8822A218D8BC9006B55D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Flaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.Flaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A8E8822C218D8BC9006B55D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaker.app/Flaker";
+			};
+			name = Debug;
+		};
+		A8E8822D218D8BC9006B55D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaker.app/Flaker";
+			};
+			name = Release;
+		};
+		A8E8822F218D8BC9006B55D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flaker;
+			};
+			name = Debug;
+		};
+		A8E88230218D8BC9006B55D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Calhacks5.FlakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flaker;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        A8E881FB218D8BC7006B55D5 /* Build configuration list for PBXProject "Flaker" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A8E88226218D8BC9006B55D5 /* Debug */,
-                A8E88227218D8BC9006B55D5 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        A8E88228218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "Flaker" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A8E88229218D8BC9006B55D5 /* Debug */,
-                A8E8822A218D8BC9006B55D5 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        A8E8822B218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerTests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A8E8822C218D8BC9006B55D5 /* Debug */,
-                A8E8822D218D8BC9006B55D5 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        A8E8822E218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerUITests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                A8E8822F218D8BC9006B55D5 /* Debug */,
-                A8E88230218D8BC9006B55D5 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		A8E881FB218D8BC7006B55D5 /* Build configuration list for PBXProject "Flaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E88226218D8BC9006B55D5 /* Debug */,
+				A8E88227218D8BC9006B55D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E88228218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "Flaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E88229218D8BC9006B55D5 /* Debug */,
+				A8E8822A218D8BC9006B55D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E8822B218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E8822C218D8BC9006B55D5 /* Debug */,
+				A8E8822D218D8BC9006B55D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E8822E218D8BC9006B55D5 /* Build configuration list for PBXNativeTarget "FlakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E8822F218D8BC9006B55D5 /* Debug */,
+				A8E88230218D8BC9006B55D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-    };
-    rootObject = A8E881F8218D8BC7006B55D5 /* Project object */;
+	};
+	rootObject = A8E881F8218D8BC7006B55D5 /* Project object */;
 }

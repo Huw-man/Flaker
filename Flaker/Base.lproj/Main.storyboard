@@ -44,6 +44,7 @@
                                         <state key="normal" title="Start"/>
                                         <connections>
                                             <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAl-F9-CCi"/>
+                                            <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qKJ-th-MoP"/>
                                             <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPI-oE-Xwb"/>
                                         </connections>
                                     </button>
@@ -92,6 +93,14 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzB-uh-UNs">
+                                        <rect key="frame" x="205" y="131" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="start2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ZZ-6Q-uB1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -120,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="594" y="-6"/>
+            <point key="canvasLocation" x="177" y="-457"/>
         </scene>
     </scenes>
 </document>

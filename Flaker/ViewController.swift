@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func createParty(_ sender: UIButton) {
        let number = Int.random(in: 100000 ..< 999999)
-       print(number)
+       // print(number)
        newCodeLabel.text = String(number)
     
     }
@@ -56,6 +56,39 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func joinParty(_ sender: UIButton)   {
     }
     
-    @IBAction func startButton(_ sender: UIButton) {
-}
+    
+    @IBAction func start(_ sender: UIButton) {
+        print("start")
+        
+    }
+    @IBAction func start2(_ sender: Any) {
+        print("start2")
+    
+    //    @IBAction func startButton(_ sender: UIButton) {
+        // begin navigation to destination
+        print("redirecting to google maps")
+        let url = "https://www.google.com/maps/dir/?api=1"
+        var urlOptions = [
+            UIApplication.OpenExternalURLOptionsKey(rawValue: "center") : "40.765819,-73.975866 ",
+            "zoom" : 14,
+            "views" : "traffic"
+
+            ] as! [UIApplication.OpenExternalURLOptionsKey : Any]
+        //check availability of google maps
+        if (UIApplication.shared.canOpenURL(URL(string: url)!)) {
+            UIApplication.shared.open(URL(string: url)!,
+                                      options: [:],
+                                      completionHandler: nil)
+
+//            UIApplication.shared.openURL(URL(string:
+//                "comgooglemaps://?center=40.765819,-73.975866&zoom=14&views=traffic")!)
+        } else {
+            print("Can't use comgooglemaps://");
+        }
+    }
+//
+////        - (void)openURL:(NSURL *)url
+////        options:(NSDictionary<UIApplicationOpenExternalURLOptionsKey, id> *)options
+////        completionHandler:(void (^)(BOOL success))completion;
+//    }
 }

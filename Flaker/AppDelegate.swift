@@ -67,7 +67,7 @@ extension AppDelegate: CLLocationManagerDelegate {
         
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
+//        print("locations = \(locValue.latitude) \(locValue.longitude)")
         
         // create CLLocation from the coordinates of CLVisit
 //        let clLocation = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)

@@ -14,26 +14,44 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var newCodeLabel: UILabel!
     @IBOutlet weak var joinCodeLabel: UITextField!
+<<<<<<< HEAD
 /*
+=======
+
+    
+>>>>>>> 6d99db07e286362cae5bae3d6d8be87c735cfcb3
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // handle the code fields input through delegate callbacks
-        //joinCodeLabel.delegate = self
+        joinCodeLabel.delegate = self
     }
+<<<<<<< HEAD
 */
     /*
+=======
+
+>>>>>>> 6d99db07e286362cae5bae3d6d8be87c735cfcb3
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //hides the keyboard
         textField.resignFirstResponder()
         return true
+<<<<<<< HEAD
         }
  */
    // func textFieldDidEndEditing(_ textField: UITextField) {
       //  nameLabel.text = textField.text
     // }
     
+=======
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        nameLabel.text = textField.text
+        
+    }
+
+>>>>>>> 6d99db07e286362cae5bae3d6d8be87c735cfcb3
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         newCodeLabel.text = "Unique Code"
@@ -50,7 +68,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func startButton(_ sender: UIButton) {
-    }
-    
 }
-
+}

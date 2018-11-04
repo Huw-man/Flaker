@@ -8,18 +8,19 @@
 //
 
 import Foundation
+import CoreData
 
 class HttpClient {
-
-    func makeGetCall() {
+    var re = [String:Any]()
+    // General GetCall function takes in the endpoint and params string
+    func makeGetCall(params : String) {
         // Set up the URL request
-        let todoEndpoint: String = "https://rendezvous-api.herokuapp.com/"
+        let todoEndpoint: String = "https://rendezvous-api.herokuapp.com/" + params
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         let urlRequest = URLRequest(url: url)
-        
         // set up the session
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
@@ -48,7 +49,6 @@ class HttpClient {
                 // now we have the todo
                 // let's just print it to prove we can access it
                 print("The todo is: " + todo.description)
-                
                 // the todo object is a dictionary
                 // so we just access the title using the "title" key
                 // so check for a title and print it if we have one
@@ -57,12 +57,34 @@ class HttpClient {
                     return
                 }
                 print("The title is: " + todoTitle)
+                self.re = todo
             } catch  {
                 print("error trying to convert data to JSON")
                 return
             }
         }
         task.resume()
+    }
+    
+    //get rendezvous return the dict response
+    func makeGetRendezvous(code: Int) {
+        let endpoint = "rendezvous?code=\(code)"
+        makeGetCall(params: endpoint)
+    }
+    
+    func makeGetPartySize(code: Int) {
+        let endpoint = "party_size?code=\(code)"
+        makeGetCall(params: endpoint)
+    }
+    
+    func makeGetDest(code: Int) {
+        let endpoint = "get_dest?code=\(code)"
+        makeGetCall(params: endpoint)
+    }
+    
+    func makeGetLocateParty(code: Int, userID: Int) {
+        let endpoint = "locate_party?code=\(code)&user_id=\(userID)"
+        makeGetCall(params: endpoint)
     }
 
     func makePostCall(_ code: Int, lat: Double, lon: Double) {
@@ -95,14 +117,15 @@ class HttpClient {
                                                                             print("Could not get JSON from responseData as dictionary")
                                                                             return
                 }
-                print("The todo is: " + receivedTodo.description)
-                
-                /*guard let todoID = receivedTodo["id"] as? Int else {
-                    print("Could not get todoID as int from JSON")
-                    return
-                }
-                print("The ID is: \(todoID)")
- */
+//                print("The todo is: " + receivedTodo.description)
+//
+//                guard let todoID = receivedTodo["id"] as? Int else {
+//                    print("Could not get todoID as int from JSON")
+//                    return
+//                }
+//                print("The ID is: \(todoID)")
+                self.re = receivedTodo
+                print("\(receivedTodo)")
             } catch  {
                 print("error parsing response from POST on /todos")
                 return

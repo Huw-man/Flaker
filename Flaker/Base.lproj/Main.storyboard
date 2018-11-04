@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-Hn-Xva">
-                                <rect key="frame" x="121" y="54" width="132" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-Hn-Xva">
+                                <rect key="frame" x="121" y="54" width="133" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="NFa-ID-5j1"/>
+                                    <constraint firstAttribute="height" constant="53" id="qa3-m2-QnP"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Flaker">
@@ -37,9 +37,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-PP-iiP">
                                 <rect key="frame" x="22" y="405" width="331" height="212"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLS-Up-ExZ">
-                                        <rect key="frame" x="134" y="131" width="63" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLS-Up-ExZ">
+                                        <rect key="frame" x="134" y="51" width="63" height="110"/>
                                         <state key="normal" title="Start"/>
                                         <connections>
                                             <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAl-F9-CCi"/>
@@ -93,17 +92,23 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jLS-Up-ExZ" firstAttribute="centerY" secondItem="kjp-PP-iiP" secondAttribute="centerY" id="Bl6-pf-GE1"/>
+                                    <constraint firstAttribute="bottom" secondItem="jLS-Up-ExZ" secondAttribute="bottom" constant="51" id="MsL-iC-V89"/>
+                                    <constraint firstItem="jLS-Up-ExZ" firstAttribute="centerX" secondItem="kjp-PP-iiP" secondAttribute="centerX" id="St5-XJ-Nee"/>
+                                    <constraint firstItem="jLS-Up-ExZ" firstAttribute="leading" secondItem="kjp-PP-iiP" secondAttribute="leading" constant="134" id="o1h-Fi-s07"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kjp-PP-iiP" secondAttribute="bottom" constant="50" id="3Ta-op-LTk"/>
-                            <constraint firstItem="kjp-PP-iiP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="405" id="3k4-XS-2TO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kjp-PP-iiP" secondAttribute="trailing" constant="22" id="RiL-aD-Zyc"/>
-                            <constraint firstItem="kjp-PP-iiP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="X9b-ND-rM0"/>
-                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="tRg-a6-Xsy"/>
-                            <constraint firstItem="kjp-PP-iiP" firstAttribute="centerX" secondItem="uEi-Hn-Xva" secondAttribute="centerX" id="v7s-dd-rEG"/>
-                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="w1W-Zv-v3b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kjp-PP-iiP" secondAttribute="bottom" constant="50" id="3md-BN-zkc"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="845-bd-OJF"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UU5-h9-6YO"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="centerX" secondItem="kjp-PP-iiP" secondAttribute="centerX" id="Wih-MG-pkO"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="how-gT-xLb"/>
+                            <constraint firstItem="kjp-PP-iiP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="405" id="qbm-F8-oo4"/>
+                            <constraint firstItem="kjp-PP-iiP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="zw3-3z-ItA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -111,7 +116,6 @@
                         <outlet property="joinCodeLabel" destination="xbn-Y8-nig" id="jb9-LV-DSk"/>
                         <outlet property="nameLabel" destination="uEi-Hn-Xva" id="zUp-bm-1wg"/>
                         <outlet property="newCodeLabel" destination="302-Ea-lgp" id="4mx-Zy-GF0"/>
-                        <outlet property="uniqueCodeLabel" destination="tQp-RU-2YH" id="J2C-cp-Eom"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,9 +9,49 @@
 
 import Foundation
 import CoreData
+import UIKit
 
-class HttpClient {
+
+class HttpClient: ViewControllerDelegate {
+    
     var re = [String:Any]()
+    var user_id = 0
+    let code = 0
+    var party_size = 0
+    
+    
+    
+    func requestCoreData(key : String) -> String {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        //        do {
+        //            try context.save()
+        //        } catch {
+        //            print("Failed saving")
+        //        }
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                return (data.value(forKey: key) as! String)
+                //                print(data.value(forKey: "username") as! String)
+            }
+        } catch {
+            print("Failed")
+        }
+        return "failed"
+    }
+    
+    func putCoreData(value: Any, param: String) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Users", in: context)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        newUser.setValue(value, forKey: param)
+    }
+    
     // General GetCall function takes in the endpoint and params string
     func makeGetCall(params : String) {
         // Set up the URL request
@@ -52,11 +92,11 @@ class HttpClient {
                 // the todo object is a dictionary
                 // so we just access the title using the "title" key
                 // so check for a title and print it if we have one
-                guard let todoTitle = todo["title"] as? String else {
-                    print("Could not get todo title from JSON")
-                    return
-                }
-                print("The title is: " + todoTitle)
+//                guard let todoTitle = todo["title"] as? String else {
+//                    print("Could not get todo title from JSON")
+//                    return
+//                }
+//                print("The title is: " + todoTitle)
                 self.re = todo
             } catch  {
                 print("error trying to convert data to JSON")
@@ -75,6 +115,12 @@ class HttpClient {
     func makeGetPartySize(code: Int) {
         let endpoint = "party_size?code=\(code)"
         makeGetCall(params: endpoint)
+        print("\(self.re)")
+        let jank = String(describing: self.re["result"])
+        if let number = Int(jank.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) {
+            self.party_size = number
+        }
+        print("\(self.party_size)")
     }
     
     func makeGetDest(code: Int) {
@@ -124,8 +170,17 @@ class HttpClient {
 //                    return
 //                }
 //                print("The ID is: \(todoID)")
-                self.re = receivedTodo
                 print("\(receivedTodo)")
+                let jank = String(describing: receivedTodo["result"])
+                if let number = Int(jank.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) {
+                    // Do something with this number
+//                    self.putCoreData(value: number, param: "user_id")
+                    print("\(number)")
+                    self.user_id = number
+                    self.updateUserID(number)
+                }
+                
+                
             } catch  {
                 print("error parsing response from POST on /todos")
                 return
@@ -135,4 +190,10 @@ class HttpClient {
     }
 
     
+    func changePartySize(_ size1: Int?) {
+        ViewController().psize = size1!
+    }
+    func updateUserID(_ id: Int?) {
+        ViewController().user_id = id!
+    }
 }

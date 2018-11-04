@@ -9,19 +9,28 @@
 import UIKit
 import CoreData
 
+protocol ViewControllerDelegate: class {
+    func changePartySize(_ size:Int?)
+    func updateUserID(_ id:Int?)
+}
+
 class ViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var newCodeLabel: UILabel!
     @IBOutlet weak var joinCodeLabel: UITextField!
-
+    
+    weak var delegate: ViewControllerDelegate?
+    
+    var user_id = 0
+    var code = 0
+    var psize = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // handle the code fields input through delegate callbacks
         joinCodeLabel.delegate = self
-        
         //setup coredata
         
         
@@ -117,13 +126,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         newCodeLabel.text = String(number)
         let caller = HttpClient()
         caller.makePostCall(number, lat: AppDelegate.lat, lon: AppDelegate.lon)
+        self.code = number
+//        print("\(caller.re)")
         
-        if let jsonResult = caller.re as? Dictionary<String, AnyObject> {
-            // do whatever with jsonResult
-            print("\(jsonResult)")
-//            let t = jsonResult["result"]!["user_id"]!!
-//            putCoreData(value: t, param: "user_id")
-        }
     }
     
     @IBAction func joinParty(_ sender: UIButton)   {
@@ -131,6 +136,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         HttpClient().makePostCall(Int(joinCodeLabel.text!)!, lat: AppDelegate.lat, lon: AppDelegate.lon)
     }
     
+    @IBAction func getPartySize(_ sender: UIButton) {
+        let caller = HttpClient()
+        caller.makeGetPartySize(code: self.code)
+//        print("\(caller.party_size)")
+        sender.setTitle(String(caller.party_size), for: .normal)
+    }
     
     
     

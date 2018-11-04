@@ -48,14 +48,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func createParty(_ sender: UIButton) {
         let number = Int.random(in: 100000 ..< 999999)
-        // print(number)
         newCodeLabel.text = String(number)
         HttpClient().makePostCall(number, lat: AppDelegate.lat, lon: AppDelegate.lon)
     
     }
     
     @IBAction func joinParty(_ sender: UIButton)   {
+        print(joinCodeLabel.text!)
+        HttpClient().makePostCall(Int(joinCodeLabel.text!)!, lat: AppDelegate.lat, lon: AppDelegate.lon)
     }
+    
     
     
     

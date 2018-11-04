@@ -14,6 +14,8 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    static var lat = 0.0
+    static var lon = 0.0
     
     //instance variables
     let center = UNUserNotificationCenter.current()
@@ -65,9 +67,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
-    }
-}
+        AppDelegate.lat = locValue.latitude
+        AppDelegate.lon = locValue.longitude
         
 //        print("locations = \(locValue.latitude) \(locValue.longitude)")
         

@@ -14,7 +14,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var newCodeLabel: UILabel!
     @IBOutlet weak var joinCodeLabel: UITextField!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +35,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         nameLabel.text = textField.text
-        
     }
 
     //MARK: Actions
@@ -50,12 +49,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
        let number = Int.random(in: 100000 ..< 999999)
        print(number)
        newCodeLabel.text = String(number)
-    
     }
     
     @IBAction func joinParty(_ sender: UIButton)   {
     }
     
     @IBAction func startButton(_ sender: UIButton) {
-}
+    }
 }

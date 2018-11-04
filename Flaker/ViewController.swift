@@ -68,12 +68,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // begin navigation to destination
         print("redirecting to google maps")
         let url = "https://www.google.com/maps/dir/?api=1"
-        var urlOptions = [
-            UIApplication.OpenExternalURLOptionsKey(rawValue: "center") : "40.765819,-73.975866 ",
-            "zoom" : 14,
-            "views" : "traffic"
-
-            ] as! [UIApplication.OpenExternalURLOptionsKey : Any]
+//        var urlOptions = [
+//            UIApplication.OpenExternalURLOptionsKey(rawValue: "center") : "40.765819,-73.975866 ",
+//            "zoom" : 14,
+//            "views" : "traffic"
+//
+//            ] as! [UIApplication.OpenExternalURLOptionsKey : Any]
         //check availability of google maps
         if (UIApplication.shared.canOpenURL(URL(string: url)!)) {
             UIApplication.shared.open(URL(string: url)!,

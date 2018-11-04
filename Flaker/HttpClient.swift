@@ -13,7 +13,7 @@ class HttpClient {
 
     func makeGetCall() {
         // Set up the URL request
-        let todoEndpoint: String = "https://jsonplaceholder.typicode.com/todos/1"
+        let todoEndpoint: String = "https://rendezvous-api.herokuapp.com/"
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
@@ -65,15 +65,18 @@ class HttpClient {
         task.resume()
     }
 
-    func makePostCall() {
-        let todosEndpoint: String = "https://jsonplaceholder.typicode.com/todos"
+    func makePostCall(_ code: Int, lat: Double, lon: Double) {
+        let todosEndpoint: String = "https://rendezvous-api.herokuapp.com/"
         guard let todosURL = URL(string: todosEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         var todosUrlRequest = URLRequest(url: todosURL)
         todosUrlRequest.httpMethod = "POST"
-        let newTodo: [String: Any] = ["title": "My First todo", "completed": false, "userId": 1]
+        let newTodo = "create_user?code=" + String(code) + "&lat=" + String(lat) + "&lon=" + String(lon)
+        todosUrlRequest.httpBody = newTodo.data(using: String.Encoding.utf8)
+/*
+        let newTodo: [String: Any] = ["code": code, "lat": lat, "lon": lon]
         let jsonTodo: Data
         do {
             jsonTodo = try JSONSerialization.data(withJSONObject: newTodo, options: [])
@@ -82,7 +85,9 @@ class HttpClient {
             print("Error: cannot create JSON from todo")
             return
         }
-        
+ */
+        print(newTodo)
+        print(todosUrlRequest)
         let session = URLSession.shared
         
         let task = session.dataTask(with: todosUrlRequest) {
@@ -106,11 +111,12 @@ class HttpClient {
                 }
                 print("The todo is: " + receivedTodo.description)
                 
-                guard let todoID = receivedTodo["id"] as? Int else {
+                /*guard let todoID = receivedTodo["id"] as? Int else {
                     print("Could not get todoID as int from JSON")
                     return
                 }
                 print("The ID is: \(todoID)")
+ */
             } catch  {
                 print("error parsing response from POST on /todos")
                 return

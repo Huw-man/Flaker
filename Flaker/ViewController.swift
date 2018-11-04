@@ -36,9 +36,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         nameLabel.text = textField.text
-        
     }
 
     //MARK: Actions

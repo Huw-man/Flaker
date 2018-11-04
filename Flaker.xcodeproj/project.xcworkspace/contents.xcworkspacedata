@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Flaker.xcodeproj">
+      location = "group:../../../Screen Shot 2018-11-03 at 7.35.55 PM.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

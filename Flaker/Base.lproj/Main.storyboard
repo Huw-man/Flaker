@@ -18,29 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-Hn-Xva">
-                                <rect key="frame" x="121" y="54" width="133" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="ZOp-VR-1o8"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Flaker">
-                                        <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="44" name="DINAlternate-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-11-03 at 7.35.55 PM.png" highlightedImage="Screen Shot 2018-11-03 at 7.35.55 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="vWN-CH-3u0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="656"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-PP-iiP">
                                 <rect key="frame" x="22" y="419" width="331" height="212"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLS-Up-ExZ">
                                         <rect key="frame" x="134" y="131" width="63" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="63" id="AU6-g8-AnK"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="AU6-g8-AnK"/>
                                         </constraints>
                                         <state key="normal" title="Start"/>
                                         <connections>
@@ -54,6 +42,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH7-Yg-ucE">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="FtF-Im-vbM"/>
                                                 </constraints>
@@ -64,6 +53,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-YC-WQE">
                                                 <rect key="frame" x="0.0" y="64" width="86" height="30"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Join Party"/>
                                                 <connections>
                                                     <action selector="joinParty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01Y-HT-pXY"/>
@@ -94,20 +84,42 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.86959903623340573" blue="0.30698458092484271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="jLS-Up-ExZ" secondAttribute="bottom" constant="51" id="4fS-zM-3OB"/>
                                     <constraint firstItem="jLS-Up-ExZ" firstAttribute="centerX" secondItem="kjp-PP-iiP" secondAttribute="centerX" id="HYs-ft-Vpt"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-Hn-Xva">
+                                <rect key="frame" x="52" y="55" width="271" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="UvD-0f-baO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rendezvouz">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="64" name="SignPainter-HouseScript"/>
+                                            <font key="NSOriginalFont" size="44" name="BodoniSvtyTwoOSITCTT-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kjp-PP-iiP" firstAttribute="centerX" secondItem="uEi-Hn-Xva" secondAttribute="centerX" id="6LJ-X6-T50"/>
-                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A01-KI-lxx"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="F3c-vQ-ZB8"/>
                             <constraint firstItem="kjp-PP-iiP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="GTZ-pR-OsQ"/>
-                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="WoO-ma-oV1"/>
-                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="fG8-8g-ahJ"/>
+                            <constraint firstItem="vWN-CH-3u0" firstAttribute="centerX" secondItem="uEi-Hn-Xva" secondAttribute="centerX" id="HpQ-an-HrT"/>
+                            <constraint firstItem="vWN-CH-3u0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NQJ-rh-Wxn"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="ViZ-zo-jSZ"/>
+                            <constraint firstItem="vWN-CH-3u0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WgQ-aO-ILN"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="neG-DA-rdR"/>
+                            <constraint firstItem="uEi-Hn-Xva" firstAttribute="centerX" secondItem="kjp-PP-iiP" secondAttribute="centerX" id="rfc-2E-Lhz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="vWN-CH-3u0" secondAttribute="bottom" constant="-9" id="vMe-W2-zA5"/>
                             <constraint firstItem="kjp-PP-iiP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="419" id="w0R-4x-pi3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kjp-PP-iiP" secondAttribute="bottom" constant="36" id="zsk-ub-bfY"/>
                         </constraints>
@@ -124,4 +136,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2018-11-03 at 7.35.55 PM.png" width="970" height="1264"/>
+    </resources>
 </document>

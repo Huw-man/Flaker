@@ -23,18 +23,6 @@
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-PP-iiP">
                                 <rect key="frame" x="22" y="419" width="370" height="407"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLS-Up-ExZ">
-                                        <rect key="frame" x="153.5" y="326" width="63" height="30"/>
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="AU6-g8-AnK"/>
-                                        </constraints>
-                                        <state key="normal" title="Start"/>
-                                        <connections>
-                                            <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAl-F9-CCi"/>
-                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPI-oE-Xwb"/>
-                                        </connections>
-                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="vDG-CR-RIz">
                                         <rect key="frame" x="35" y="20" width="86" height="94"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,12 +70,22 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaE-fJ-TkD">
+                                        <rect key="frame" x="156" y="288" width="58" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AN-N0-4tG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="1" green="0.86959903623340573" blue="0.30698458092484271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="jLS-Up-ExZ" secondAttribute="bottom" constant="51" id="4fS-zM-3OB"/>
-                                    <constraint firstItem="jLS-Up-ExZ" firstAttribute="centerX" secondItem="kjp-PP-iiP" secondAttribute="centerX" id="HYs-ft-Vpt"/>
+                                    <constraint firstAttribute="bottom" secondItem="xaE-fJ-TkD" secondAttribute="bottom" constant="83" id="rG7-Qy-TKe"/>
+                                    <constraint firstItem="xaE-fJ-TkD" firstAttribute="centerX" secondItem="kjp-PP-iiP" secondAttribute="centerX" id="vba-OI-Euh"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-Hn-Xva">

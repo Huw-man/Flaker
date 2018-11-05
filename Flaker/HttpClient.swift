@@ -8,18 +8,59 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
-class HttpClient {
 
-    func makeGetCall() {
+class HttpClient: ViewControllerDelegate {
+    
+    var re = [String:Any]()
+    var user_id = 0
+    let code = 0
+    var party_size = 0
+    
+    
+    
+    func requestCoreData(key : String) -> String {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        //        do {
+        //            try context.save()
+        //        } catch {
+        //            print("Failed saving")
+        //        }
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        //request.predicate = NSPredicate(format: "age = %@", "12")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                return (data.value(forKey: key) as! String)
+                //                print(data.value(forKey: "username") as! String)
+            }
+        } catch {
+            print("Failed")
+        }
+        return "failed"
+    }
+    
+    func putCoreData(value: Any, param: String) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Users", in: context)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        newUser.setValue(value, forKey: param)
+    }
+    
+    // General GetCall function takes in the endpoint and params string
+    func makeGetCall(params : String) {
         // Set up the URL request
-        let todoEndpoint: String = "https://rendezvous-api.herokuapp.com/"
+        let todoEndpoint: String = "https://rendezvous-api.herokuapp.com/" + params
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
         }
         let urlRequest = URLRequest(url: url)
-        
         // set up the session
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
@@ -48,21 +89,48 @@ class HttpClient {
                 // now we have the todo
                 // let's just print it to prove we can access it
                 print("The todo is: " + todo.description)
-                
                 // the todo object is a dictionary
                 // so we just access the title using the "title" key
                 // so check for a title and print it if we have one
-                guard let todoTitle = todo["title"] as? String else {
-                    print("Could not get todo title from JSON")
-                    return
-                }
-                print("The title is: " + todoTitle)
+//                guard let todoTitle = todo["title"] as? String else {
+//                    print("Could not get todo title from JSON")
+//                    return
+//                }
+//                print("The title is: " + todoTitle)
+                self.re = todo
             } catch  {
                 print("error trying to convert data to JSON")
                 return
             }
         }
         task.resume()
+    }
+    
+    //get rendezvous return the dict response
+    func makeGetRendezvous(code: Int) {
+        let endpoint = "rendezvous?code=\(code)"
+        makeGetCall(params: endpoint)
+    }
+    
+    func makeGetPartySize(code: Int) {
+        let endpoint = "party_size?code=\(code)"
+        makeGetCall(params: endpoint)
+        print("\(self.re)")
+        let jank = String(describing: self.re["result"])
+        if let number = Int(jank.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) {
+            self.party_size = number
+        }
+        print("\(self.party_size)")
+    }
+    
+    func makeGetDest(code: Int) {
+        let endpoint = "get_dest?code=\(code)"
+        makeGetCall(params: endpoint)
+    }
+    
+    func makeGetLocateParty(code: Int, userID: Int) {
+        let endpoint = "locate_party?code=\(code)&user_id=\(userID)"
+        makeGetCall(params: endpoint)
     }
 
     func makePostCall(_ code: Int, lat: Double, lon: Double) {
@@ -95,14 +163,24 @@ class HttpClient {
                                                                             print("Could not get JSON from responseData as dictionary")
                                                                             return
                 }
-                print("The todo is: " + receivedTodo.description)
-                
-                /*guard let todoID = receivedTodo["id"] as? Int else {
-                    print("Could not get todoID as int from JSON")
-                    return
+//                print("The todo is: " + receivedTodo.description)
+//
+//                guard let todoID = receivedTodo["id"] as? Int else {
+//                    print("Could not get todoID as int from JSON")
+//                    return
+//                }
+//                print("The ID is: \(todoID)")
+                print("\(receivedTodo)")
+                let jank = String(describing: receivedTodo["result"])
+                if let number = Int(jank.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) {
+                    // Do something with this number
+//                    self.putCoreData(value: number, param: "user_id")
+                    print("\(number)")
+                    self.user_id = number
+                    self.updateUserID(number)
                 }
-                print("The ID is: \(todoID)")
- */
+                
+                
             } catch  {
                 print("error parsing response from POST on /todos")
                 return
@@ -112,4 +190,10 @@ class HttpClient {
     }
 
     
+    func changePartySize(_ size1: Int?) {
+        ViewController().psize = size1!
+    }
+    func updateUserID(_ id: Int?) {
+        ViewController().user_id = id!
+    }
 }

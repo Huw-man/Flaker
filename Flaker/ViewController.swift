@@ -27,6 +27,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var code = 0
     var psize = 0
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // handle the code fields input through delegate callbacks
@@ -122,6 +124,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func createParty(_ sender: UIButton) {
+
         let number = Int.random(in: 100000 ..< 999999)
         newCodeLabel.text = String(number)
         let caller = HttpClient()
